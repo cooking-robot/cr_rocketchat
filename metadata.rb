@@ -1,7 +1,7 @@
 name 'cr_rocketchat'
 maintainer 'Remi BONNET'
 maintainer_email 'prog.bontiv@gmail.com'
-license 'All Rights Reserved'
+license 'GPL-3.0'
 description 'Installs/Configures Rocket.Chat'
 version '0.1.0'
 chef_version '>= 16.0'
@@ -20,3 +20,4 @@ source_url 'https://github.com/cooking-robot/cr_rocketchat'
 
 supports 'windows'
 supports 'ubuntu'
+supports 'debian'

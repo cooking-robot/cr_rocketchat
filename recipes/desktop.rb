@@ -2,7 +2,7 @@
 # Cookbook:: cr_rocketchat
 # Recipe:: desktop
 #
-# Copyright:: 2025, The Authors, All Rights Reserved.
+# Copyright:: 2025, Remi BONNET, GPL v3
 
 rc_dir = nil
 case node['platform_family']
@@ -17,10 +17,6 @@ when 'debian'
     source tmp_file
     action :install
   end
-
-  # snap_package 'rocketchat-desktop' do
-  #   action :install
-  # end
 
   if node['rocketchat']['server']
     directory '/opt/Rocket.Chat/resources/' do
