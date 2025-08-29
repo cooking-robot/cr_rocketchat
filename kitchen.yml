@@ -1,6 +1,8 @@
 ---
 driver:
   name: vagrant
+  gui: true
+
 
 ## The forwarded_port port feature lets you connect to ports on the VM guest
 ## via localhost on the host.
@@ -21,15 +23,10 @@ verifier:
   name: inspec
 
 platforms:
-  - name: almalinux-9
-  - name: amazonlinux-2023
-  - name: centos-stream-9
-  - name: debian-12
+  - name: almalinux-10
+  - name: centos-stream-10
+  - name: debian-13
   - name: fedora-latest
-  - name: freebsd-14
-  - name: opensuse-leap-15
-  - name: oraclelinux-9
-  - name: rockylinux-9
   - name: ubuntu-24.04
 
 suites:
